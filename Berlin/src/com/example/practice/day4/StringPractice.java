@@ -2,10 +2,7 @@ package com.example.practice.day4;
 
 import java.util.Arrays;
 
-//Medium:
-//Check palindrome
-//Reverse words
-//Count words
+
 //Find duplicate characters
 //Find frequency of characters
 //Find first non-repeating character
@@ -150,25 +147,51 @@ class StringBasic {
 	// Replace a character
 	public String replaceCharacter(String s, char c, int index) {
 		String newString = "";
-		for(int i = 0;i < s.length(); i++) {
-			if(index == i) {
+		for (int i = 0; i < s.length(); i++) {
+			if (index == i) {
 				newString += c;
-			}else {
+			} else {
 				newString += s.charAt(i);
 			}
 		}
 		return newString;
 	}
-	
-	//Check whether two Strings are equal
+
+	// Check whether two Strings are equal
 	public boolean checkStringEqual(String s1, String s2) {
-		if(s1.equals(s2)) {
+		if (s1.equals(s2)) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
 
+}
+
+//Medium:
+class StringMedium {
+	// Check palindrome
+	public boolean isPalindrome(String s) {
+		String reversed = new StringBuilder(s).reverse().toString();
+		if (s.equals(reversed)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Reverse words
+	public void reverseWords(String s) {
+		
+
+	}
+
+	//Count words
+	public int countWords(String s) {
+		if(s.length() == 0) return 0;
+		String[] str = s.split(" ");
+		return str.length;
+	}
 }
 
 public class StringPractice {
@@ -256,9 +279,8 @@ public class StringPractice {
 	}
 
 	public static void main(String[] args) {
-		String s = new StringBasic().replaceCharacter("arghya", 'r', 2);
-		System.out.println(s);
-
+		int noOfWords = new StringMedium().countWords("");
+		System.out.println(noOfWords);
 	}
 
 }
