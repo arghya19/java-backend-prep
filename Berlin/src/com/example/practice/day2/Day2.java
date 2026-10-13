@@ -2,7 +2,7 @@ package com.example.practice.day2;
 
 public class Day2 {
 
-	static void ex1(int num) {
+	public void ex1(int num) {
 		// Odd or Even
 		if (num % 2 == 0) {
 			System.out.println("Even: " + num);
@@ -11,7 +11,7 @@ public class Day2 {
 		}
 	}
 
-	static void ex2(int n1, int n2, int n3) {
+	public void ex2(int n1, int n2, int n3) {
 		// Largest of three
 		if (n1 > n2 && n1 > n3) {
 			System.out.println(n1 + " is largest.");
@@ -24,7 +24,7 @@ public class Day2 {
 		}
 	}
 
-	static void ex3() {
+	public void ex3() {
 		// Run Loop from 1 to 100
 		for (int i = 1; i <= 100; i++) {
 			System.out.print(i + ", ");
@@ -32,14 +32,14 @@ public class Day2 {
 		System.out.println();
 	}
 
-	static void ex4(int n) {
+	public void ex4(int n) {
 		// Multiplication Table
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(n + " * " + i + " = " + (n * i));
 		}
 	}
 
-	static void ex5() {
+	public void ex5() {
 		// Sum from 1 to 100
 		int sum = 0;
 		for (int i = 1; i <= 100; i++) {
@@ -49,7 +49,7 @@ public class Day2 {
 
 	}
 
-	static void ex6(int n) {
+	public void ex6(int n) {
 		int fact = 1;
 		for (int i = 1; i <= n; i++) {
 			fact *= i;
@@ -57,7 +57,7 @@ public class Day2 {
 		System.out.println("Factorial of " + n + " is: " + fact);
 	}
 
-	static void ex7(int n) {
+	public void ex7(int n) {
 		// Reverse a number
 		int rev = 0;
 
@@ -70,7 +70,7 @@ public class Day2 {
 
 	}
 
-	static void ex8(String s) {
+	public void ex8(String s) {
 		// Palindrome check
 		String rev= "";
 		for(int i = s.length()-1;i>=0;i--) {
@@ -84,14 +84,7 @@ public class Day2 {
 	}
 
 	public static void main(String[] args) {
-//		ex1(17);
-//		ex2(10, 25, 15);
-//		ex3();
-//		ex4(7);
-//		ex5();
-//		ex6(5);
-//		ex7(1234);
-		ex8("hello");
+		
 
 	}
 }
