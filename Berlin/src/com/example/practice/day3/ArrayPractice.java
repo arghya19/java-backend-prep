@@ -1,4 +1,4 @@
-package com.example.practice.day3;import java.awt.image.RescaleOp;
+package com.example.practice.day3;
 
 public class ArrayPractice {
 
